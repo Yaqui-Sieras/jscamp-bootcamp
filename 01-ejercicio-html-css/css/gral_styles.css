@@ -97,6 +97,7 @@
 
   /* Botones del Header */
   & .header_page__action_page {
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +112,23 @@
       border-radius: 0.7rem;
       background-color: #334155;
       display: inline-block;
+    }
+  }
+
+  & .header_page__user {
+    width: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+
+    & .user__avatar {
+      width: 4.8rem;
+      height: 4.8rem;
+      border: 0.2rem solid var(--primary-light);
+      border-radius: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -151,3 +169,13 @@ main {
 }
 
 /* Final Pie de página */
+
+/* Genericos */
+
+button:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Final Genericos */
