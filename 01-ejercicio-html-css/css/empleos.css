@@ -161,6 +161,11 @@
           color: var(--text-primary);
         }
 
+        & .job-card__description {
+          font-size: 1.6rem;
+          color: var(--text-primary);
+        }
+
         & .job-card__details {
           font-size: 1.2rem;
           color: var(--text-muted);
@@ -180,20 +185,43 @@
             }
           }
         }
+
+        & .job-card__tech {
+          font-size: 1.4rem;
+          color: var(--text-muted);
+        }
       }
 
-      & .button-apply-job {
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: var(--text-primary);
-        background: var(--primary-light);
-        &:hover {
-          background: var(--primary-hover);
+      & .job-card__btns {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        & .button-apply-job {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: var(--text-primary);
+          background: var(--primary-light);
+          &:hover {
+            background: var(--primary-hover);
+          }
+
+          &.is-applied {
+            background: #4caf50;
+            pointer-events: none;
+          }
         }
 
-        &.is-applied {
-          background: #4caf50;
-          pointer-events: none;
+        & .button-view-details {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: var(--text-primary);
+          background: var(--primary-light);
+          &:hover {
+            background: var(--primary-hover);
+          }
         }
       }
     }

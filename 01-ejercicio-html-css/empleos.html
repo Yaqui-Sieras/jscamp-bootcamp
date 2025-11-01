@@ -6,6 +6,7 @@
   <meta name="description" content="Listado con empleos y filtros para encontrar el trabajo de tus sueños.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevJobs - Empleos</title>
+  <link rel="icon" type="image/png" href="./img/icons8-source-code-64.png" />
   <link rel="stylesheet" href="https://yaqui-sieras.github.io/miResetCSS/miReset.css" />
   <link rel="stylesheet" href="./css/gral_styles.css" />
   <link rel="stylesheet" href="./css/empleos.css">
@@ -32,9 +33,8 @@
         </a>
       </nav>
 
-      <div class="header_page__action_page">
-        <a href="">Publicar un empleo</a>
-        <a href="">Iniciar sesión</a>
+      <div class="header_page__user" data-service="github" data-username="yaqui-sieras" data-size="48">
+        <img class="user__avatar" src="https://unavatar.io/github/yaqui-sieras" alt="Avatar de usuario" />
       </div>
     </header>
 
@@ -54,7 +54,7 @@
                 <path d="M21 21l-6 -6" />
               </svg>
             </div>
-            <input class="search-bar__input" name="search" id="empleos-search-input" required type="text"
+            <input class="search-bar__input" name="search" id="jobs-search-input" required type="text"
               placeholder="Buscar trabajos, empresas o habilidades">
           </div>
           <div class="search-filters">
@@ -67,28 +67,27 @@
                 <option value="nodejs">Node.js</option>
               </optgroup>
               <hr />
-              <option value="csharp">C#</option>
               <option value="c">C</option>
               <option value="c++">C++</option>
+              <option value="csharp">C#</option>
               <hr />
               <option value="java">Java</option>
               <option value="ruby">Ruby</option>
               <option value="php">PHP</option>
             </select>
 
-            <select title="modalidad" name="modalidad" id="filter-modalidad">
+            <select title="modality" name="modality" id="filter-modality">
               <option value="">Modalidad</option>
-              <option value="remoto">Remoto</option>
-              <option value="hibrido">Híbrido</option>
-              <option value="presencial">Presencial</option>
+              <option value="remote">Remote</option>
+              <option value="hybrid">Hybrid</option>
+              <option value="onsite">Onsite</option>
             </select>
 
             <select title="location" name="location" id="filter-location">
-              <option value="">Ubicación</option>
-              <option value="cdmx">Ciudad de México</option>
-              <option value="guadalajara">Guadalajara</option>
-              <option value="monterrey">Monterrey</option>
-              <option value="barcelona">Barcelona</option>
+              <option value="">Location</option>
+              <option value="cdmx_mx">Ciudad de México</option>
+              <option value="bsas_ar">Buenos Aires</option>
+              <option value="asu_py">Asunción</option>
             </select>
 
             <select title="experience-level" name="experience-level" id="filter-experience-level">
@@ -98,7 +97,12 @@
               <option value="senior">Senior</option>
               <option value="lead">Lead</option>
             </select>
-            <span id="filter-selected-value"></span>
+
+            <select title="time" name="time" id="filter-time">
+              <option value="">Tiempo</option>
+              <option value="full_time">Completo</option>
+              <option value="part_time">Parcial</option>
+            </select>
           </div>
         </form>
 
@@ -108,43 +112,59 @@
         <h2 class="jobs-result__title">Resultados de búsqueda</h2>
         <div class="jobs-listings">
           <!-- Aquí se insertan los empleos -->
-          <article class="job-card">
+          <article class="job-card" data-technology="react javascript" data-modality="remote" data-location="cdmx_mx"
+            data-experience="junior" data-time="part_time">
             <div class="job-card__info">
-              <h3 class="job-card__title">Desarrollador Frontend</h3>
+              <h3 class="job-card__title">Frontend Developer</h3>
               <small class="job-card__details">
-                <span>Tech Solutions</span><span>Remoto</span><span>Ciudad de México</span><span>Tiempo
-                  completo</span>
+                <span>Tech Solutions</span><span>Junior</span><span>Remote</span><span>Ciudad de
+                  México</span><span>Part Time</span>
               </small>
-              <p class="job-card__description">Buscamos un desarrollador frontend con experiencia en React y
-                JavaScript.</p>
+              <p class="job-card__description">We are looking for a passionate Frontend Developer to join our team.</p>
+              <p class="job-card__tech">Technologies required: React - JavaScript</p>
+              <small class="job-card__details">Published on: 14/6/2024</small>
             </div>
-            <button type="button" class="button-apply-job">Aplicar ahora</button>
+            <div class="job-card__btns">
+              <button type="button" class="button-apply-job">Aplicar ahora</button>
+              <button type="button" class="button-view-details">Ver detalles</button>
+            </div>
           </article>
 
-          <article class="job-card">
+          <article class="job-card" data-technology="nodejs javascript" data-modality="onsite" data-location="bsas_ar"
+            data-experience="senior" data-time="full_time">
             <div class="job-card__info">
-              <h3 class="job-card__title">Desarrollador Backend</h3>
+              <h3 class="job-card__title">Backend Developer</h3>
               <small class="job-card__details">
-                <span>Tech Solutions</span><span>Presencial</span><span>Ciudad de México</span><span>Tiempo
-                  completo</span>
+                <span>Innovatech</span><span>Senior</span><span>Onsite</span><span>Buenos Aires</span><span>Full
+                  Time</span>
               </small>
-              <p class="job-card__description">Buscamos un desarrollador backend con experiencia en Node.js y
-                Express.</p>
+              <p class="job-card__description">We are seeking a skilled Backend Developer to help us build scalable
+                applications.</p>
+              <p class="job-card__tech">Technologies required: Node.js - JavaScript</p>
+              <small class="job-card__details">Published on: 14/6/2024</small>
             </div>
-            <button type="button" class="button-apply-job">Aplicar ahora</button>
+            <div class="job-card__btns">
+              <button type="button" class="button-apply-job">Aplicar ahora</button>
+              <button type="button" class="button-view-details">Ver detalles</button>
+            </div>
           </article>
 
-          <article class="job-card">
+          <article class="job-card" data-technology="react nodejs" data-modality="hybrid" data-location="asu_py"
+            data-experience="mid" data-time="full_time">
             <div class="job-card__info">
-              <h3 class="job-card__title">Desarrollador Full Stack</h3>
+              <h3 class="job-card__title">Full Stack Developer</h3>
               <small class="job-card__details">
-                <span>Tech Solutions</span><span>Híbrido</span><span>Ciudad de México</span><span>Tiempo
-                  completo</span>
+                <span>DevWorks</span><span>Mid</span><span>Hybrid</span><span>Asunción</span><span>Full Time</span>
               </small>
-              <p class="job-card__description">Buscamos un desarrollador full stack con experiencia en React y
-                Node.js.</p>
+              <p class="job-card__description">Join our dynamic team as a Full Stack Developer and work on exciting
+                projects.</p>
+              <p class="job-card__tech">Technologies required: React - Node.js</p>
+              <small class="job-card__details">Published on: 14/6/2024</small>
             </div>
-            <button type="button" class="button-apply-job">Aplicar ahora</button>
+            <div class="job-card__btns">
+              <button type="button" class="button-apply-job">Aplicar ahora</button>
+              <button type="button" class="button-view-details">Ver detalles</button>
+            </div>
           </article>
         </div>
 
