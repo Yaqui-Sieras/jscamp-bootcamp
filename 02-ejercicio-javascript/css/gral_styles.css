@@ -97,6 +97,7 @@
 
   /* Botones del Header */
   & .header_page__action_page {
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +116,7 @@
   }
 
   & .header_page__user {
+    width: 25%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
