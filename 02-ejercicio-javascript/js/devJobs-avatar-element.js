@@ -26,6 +26,7 @@ class DevJobsAvatar extends HTMLElement {
       .avatar {
       width: ${sizeRem}rem;
       height: ${sizeRem}rem;
+      border: 0.1rem solid var(--primary-light);
       border-radius: 100%;
       object-fit: cover;
       }
