@@ -274,11 +274,3 @@
     }
   }
 }
-
-form span {
-  padding-left: 0.75rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
