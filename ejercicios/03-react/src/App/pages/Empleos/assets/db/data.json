@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0.0",
+  "status": "success",
+  "message": "Job listings retrieved successfully.",
+  "meta": {
+    "total": 16,
+    "limit": 5,
+    "offset": 0,
+    "results": 5
+  },
+  "timestamp": "2025-10-31T14:24:00Z",
+  "data": [
+    {
+      "id": "job_001",
+      "title": "Frontend Developer",
+      "company": {
+        "id": "company_001",
+        "name": "Tech Solutions",
+        "logo_url": "https://techsolutions.com/logo.png",
+        "website": "https://techsolutions.com"
+      },
+      "description": "We are looking for a passionate Frontend Developer to join our team.",
+      "attributes": {
+        "technology": [
+          { "id": "react", "label": "React" },
+          { "id": "javascript", "label": "JavaScript" }
+        ],
+        "modality": { "id": "remote", "label": "Remote" },
+        "location": { "id": "cdmx_mx", "label": "Ciudad de México" },
+        "experience_level": { "id": "junior", "label": "Junior" },
+        "time": { "id": "part_time", "label": "Part Time" },
+        "remote_zone": "GMT-6"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_001",
+      "posted_at": "2024-06-15T00:00:00Z",
+      "is_featured": true
+    },
+    {
+      "id": "job_002",
+      "title": "Backend Developer",
+      "company": {
+        "id": "company_002",
+        "name": "Innovatech",
+        "logo_url": "https://innovatech.com/logo.png",
+        "website": "https://innovatech.com"
+      },
+      "description": "We are seeking a skilled Backend Developer to help us build scalable applications.",
+      "attributes": {
+        "technology": [
+          { "id": "nodejs", "label": "Node.js" },
+          { "id": "javascript", "label": "JavaScript" }
+        ],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "bsas_ar", "label": "Buenos Aires" },
+        "experience_level": { "id": "senior", "label": "Senior" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_002",
+      "posted_at": "2024-07-15T00:00:00Z",
+      "is_featured": true
+    },
+    {
+      "id": "job_003",
+      "title": "Full Stack Developer",
+      "company": {
+        "id": "company_003",
+        "name": "DevWorks",
+        "logo_url": "https://devworks.com/logo.png",
+        "website": "https://devworks.com"
+      },
+      "description": "Join our dynamic team as a Full Stack Developer and work on exciting projects.",
+      "attributes": {
+        "technology": [
+          { "id": "react", "label": "React" },
+          { "id": "nodejs", "label": "Node.js" }
+        ],
+        "modality": { "id": "hybrid", "label": "Hybrid" },
+        "location": { "id": "asu_py", "label": "Asunción" },
+        "experience_level": { "id": "mid", "label": "Mid" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-4"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_003",
+      "posted_at": "2024-08-15T00:00:00Z",
+      "is_featured": false
+    },
+    {
+      "id": "job_004",
+      "title": "Analista de Datos",
+      "company": {
+        "id": "company_004",
+        "name": "Data Driven Co.",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.",
+      "attributes": {
+        "technology": [{ "id": "python", "label": "Python" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "cdmx_mx", "label": "Ciudad de México" },
+        "experience_level": { "id": "junior", "label": "Junior" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_004",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_005",
+      "title": "Desarrollador de Aplicaciones Móviles",
+      "company": {
+        "id": "company_005",
+        "name": "Mobile Apps Ltd.",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.",
+      "attributes": {
+        "technology": [{ "id": "mobile", "label": "Mobile" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "gdljr_mx", "label": "Guadalajara" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_005",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_006",
+      "title": "Ingeniero de DevOps",
+      "company": {
+        "id": "company_006",
+        "name": "Cloud Services SA",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.",
+      "attributes": {
+        "technology": [{ "id": "cloud", "label": "Cloud" }],
+        "modality": { "id": "remote", "label": "Remote" },
+        "location": { "id": "mdrd_es", "label": "Madrid" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-3"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_006",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_007",
+      "title": "Diseñador UX/UI",
+      "company": {
+        "id": "company_007",
+        "name": "Creative Minds Studio",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un diseñador UX/UI con pasión por crear experiencias digitales excepcionales. Se requiere experiencia en Figma, diseño centrado en el usuario y colaboración con equipos de desarrollo.",
+      "attributes": {
+        "technology": [{ "id": "design", "label": "Design" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "brcln_es", "label": "Barcelona" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_007",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_008",
+      "title": "Administrador de Bases de Datos",
+      "company": {
+        "id": "company_008",
+        "name": "Secure Data Corp.",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Se busca un administrador de bases de datos con experiencia en PostgreSQL y MySQL. El candidato deberá asegurar la disponibilidad, seguridad y rendimiento de las bases de datos de producción.",
+      "attributes": {
+        "technology": [{ "id": "databases", "label": "Databases" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "bsas_ar", "label": "Buenos Aires" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_008",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_009",
+      "title": "Especialista en Ciberseguridad",
+      "company": {
+        "id": "company_009",
+        "name": "SafeNet Solutions",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Buscamos un especialista en ciberseguridad con conocimientos en protección de infraestructuras, análisis de vulnerabilidades y respuesta ante incidentes. Se valorará experiencia con SIEM y certificaciones de seguridad.",
+      "attributes": {
+        "technology": [{ "id": "security", "label": "Cybersecurity" }],
+        "modality": { "id": "remote", "label": "Remote" },
+        "location": { "id": "brcln_es", "label": "Barcelona" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-3"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_009",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_010",
+      "title": "Product Manager",
+      "company": {
+        "id": "company_010",
+        "name": "NextGen Technologies",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un Product Manager con experiencia en la definición y lanzamiento de productos digitales. Se requiere capacidad analítica, liderazgo y conocimiento en metodologías ágiles.",
+      "attributes": {
+        "technology": [{ "id": "product", "label": "Product Management" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "mdrd_es", "label": "Madrid" },
+        "experience_level": { "id": "senior", "label": "Senior" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_010",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_011",
+      "title": "Frontend Developer",
+      "company": {
+        "id": "company_011",
+        "name": "Bright Web Studio",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Buscamos un desarrollador frontend con experiencia en React, TypeScript y Tailwind CSS. Se valorará conocimiento en optimización de rendimiento y accesibilidad web.",
+      "attributes": {
+        "technology": [{ "id": "react", "label": "React" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "vlnc_es", "label": "Valencia" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_011",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_012",
+      "title": "Backend Developer",
+      "company": {
+        "id": "company_012",
+        "name": "APIWorks",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un desarrollador backend con experiencia en Node.js, Express y bases de datos NoSQL. Se requiere conocimiento en arquitectura de microservicios.",
+      "attributes": {
+        "technology": [{ "id": "node", "label": "Node.js" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "bgt_co", "label": "Bogotá" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_012",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_013",
+      "title": "Ingeniero de Machine Learning",
+      "company": {
+        "id": "company_013",
+        "name": "AI Labs",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Buscamos un ingeniero de machine learning con experiencia en modelos de predicción y procesamiento de datos. Se valorará conocimiento en TensorFlow, PyTorch y MLOps.",
+      "attributes": {
+        "technology": [{ "id": "python", "label": "Python" }],
+        "modality": { "id": "remote", "label": "Remote" },
+        "location": { "id": "vlnc_es", "label": "Valencia" },
+        "experience_level": { "id": "senior", "label": "Senior" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-3"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_013",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_014",
+      "title": "QA Automation Engineer",
+      "company": {
+        "id": "company_014",
+        "name": "Quality First",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Se busca ingeniero de QA con experiencia en automatización de pruebas utilizando herramientas como Selenium, Cypress o Playwright. Conocimiento deseado en CI/CD.",
+      "attributes": {
+        "technology": [{ "id": "qa", "label": "QA Automation" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "lm_pe", "label": "Lima" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_014",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_015",
+      "title": "Administrador de Sistemas",
+      "company": {
+        "id": "company_015",
+        "name": "InfraTech Global",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Buscamos un administrador de sistemas con experiencia en Linux, Docker y monitoreo de servidores. Conocimiento en scripting Bash o Python será un plus.",
+      "attributes": {
+        "technology": [{ "id": "systems", "label": "Systems Administration" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "sntg_cl", "label": "Santiago de Chile" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_015",
+      "posted_at": null,
+      "is_featured": false
+    },
+    {
+      "id": "job_016",
+      "title": "Scrum Master",
+      "company": {
+        "id": "company_016",
+        "name": "Agile Minds",
+        "logo_url": null,
+        "website": null
+      },
+      "description": "Estamos buscando un Scrum Master con experiencia en metodologías ágiles y gestión de equipos multidisciplinarios. Certificación Scrum Master deseable.",
+      "attributes": {
+        "technology": [{ "id": "agile", "label": "Agile" }],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "mdrd_es", "label": "Madrid" },
+        "experience_level": { "id": "mid_level", "label": "Mid Level" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": null
+      },
+      "apply_url": "/js/detalles.html?job_id=job_016",
+      "posted_at": null,
+      "is_featured": false
+    }
+  ]
+}

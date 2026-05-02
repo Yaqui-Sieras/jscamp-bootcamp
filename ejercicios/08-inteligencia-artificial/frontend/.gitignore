@@ -1,0 +1,5 @@
+# Override root for additional outputs
+dist
+dist-ssr
+.cache
+*.local

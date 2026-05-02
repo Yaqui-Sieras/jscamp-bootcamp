@@ -1,0 +1,22 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "API de inteligencia artificial con Express",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "midudev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "cors": "^2.8.5"
+  }
+}

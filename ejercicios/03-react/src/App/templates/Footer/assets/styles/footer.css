@@ -1,0 +1,21 @@
+/* Pie de página */
+
+.footer_page {
+  width: 100%;
+  height: var(--footer-height);
+  text-align: center;
+  background-color: var(--background);
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  .copy_page {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+  }
+}
+
+/* Final Pie de página */

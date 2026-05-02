@@ -1,0 +1,32 @@
+{
+  "name": "jscamp-bootcamp",
+  "version": "1.0.0",
+  "description": "En este repositorio podrás ir entregando los ejercicios del bootcamp",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "workspaces":[
+    "ejercicios/*"
+  ],
+  "scripts": {
+    "clean:modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "clean:locks": "rm pnpm-lock.yaml",
+    "reset": "pnpm clean:modules && pnpm clean:locks && pnpm install",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yaqui-Sieras/jscamp-bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yaqui-Sieras/jscamp-bootcamp/issues"
+  },
+  "homepage": "https://github.com/Yaqui-Sieras/jscamp-bootcamp#readme"
+}
