@@ -1,0 +1,22 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "dev": "playwright test",
+    "test": "playwright test",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.57.0",
+    "@types/node": "24.1.0"
+  }
+}

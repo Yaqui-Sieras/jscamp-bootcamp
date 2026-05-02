@@ -1,0 +1,21 @@
+{
+  "name": "ai-e2e-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-ai.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "dev": "node test-ai.js",
+    "start": "node test-ai.js",
+    "test": "node test-ai.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@browserbasehq/stagehand": "^3.0.7"
+  }
+}

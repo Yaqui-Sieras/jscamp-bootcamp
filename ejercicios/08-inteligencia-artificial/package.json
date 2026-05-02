@@ -1,0 +1,26 @@
+{
+  "name": "08-inteligencia-artificial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:backend": "pnpm run watch --workspace=backend",
+    "dev:frontend": "pnpm run dev --workspace=frontend",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

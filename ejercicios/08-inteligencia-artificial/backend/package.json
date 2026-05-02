@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "dev": "node --watch app.js",
+    "start": "node app.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "midudev",
+  "license": "ISC",
+  "dependencies": {
+    "ai": "^6.0.91",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "openai": "^6.22.0",
+    "zod": "^4.3.5"
+  }
+}

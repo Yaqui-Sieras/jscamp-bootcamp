@@ -1,0 +1,7 @@
+.contenido {
+  width: 90%;
+  min-height: calc(100dvh - var(--header-height) - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

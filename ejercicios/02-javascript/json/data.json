@@ -1,0 +1,97 @@
+{
+  "status": "success",
+  "message": "Job listings retrieved successfully.",
+  "data": [
+    {
+      "id": "job_001",
+      "title": "Frontend Developer",
+      "company": {
+        "id": "company_001",
+        "name": "Tech Solutions",
+        "logo_url": "https://techsolutions.com/logo.png",
+        "website": "https://techsolutions.com"
+      },
+      "description": "We are looking for a passionate Frontend Developer to join our team.",
+      "attributes": {
+        "technology": [
+          { "id": "react", "label": "React" },
+          { "id": "javascript", "label": "JavaScript" }
+        ],
+        "modality": { "id": "remote", "label": "Remote" },
+        "location": { "id": "cdmx_mx", "label": "Ciudad de México" },
+        "experience_level": { "id": "junior", "label": "Junior" },
+        "time": { "id": "part_time", "label": "Part Time" },
+        "remote_zone": "GMT-6"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_001",
+      "posted_at": "2024-06-15T00:00:00Z",
+      "is_featured": true
+    },
+    {
+      "id": "job_002",
+      "title": "Backend Developer",
+      "company": {
+        "id": "company_002",
+        "name": "Innovatech",
+        "logo_url": "https://innovatech.com/logo.png",
+        "website": "https://innovatech.com"
+      },
+      "description": "We are seeking a skilled Backend Developer to help us build scalable applications.",
+      "attributes": {
+        "technology": [
+          { "id": "nodejs", "label": "Node.js" },
+          { "id": "javascript", "label": "JavaScript" }
+        ],
+        "modality": { "id": "onsite", "label": "Onsite" },
+        "location": { "id": "bsas_ar", "label": "Buenos Aires" },
+        "experience_level": { "id": "senior", "label": "Senior" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-3"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_002",
+      "posted_at": "2024-06-15T00:00:00Z",
+      "is_featured": true
+    },
+    {
+      "id": "job_003",
+      "title": "Full Stack Developer",
+      "company": {
+        "id": "company_003",
+        "name": "DevWorks",
+        "logo_url": "https://devworks.com/logo.png",
+        "website": "https://devworks.com"
+      },
+      "description": "Join our dynamic team as a Full Stack Developer and work on exciting projects.",
+      "attributes": {
+        "technology": [
+          { "id": "react", "label": "React" },
+          { "id": "nodejs", "label": "Node.js" }
+        ],
+        "modality": { "id": "hybrid", "label": "Hybrid" },
+        "location": { "id": "asu_py", "label": "Asunción" },
+        "experience_level": { "id": "mid", "label": "Mid" },
+        "time": { "id": "full_time", "label": "Full Time" },
+        "remote_zone": "GMT-4"
+      },
+      "apply_url": "/js/detalles.html?job_id=job_003",
+      "posted_at": "2024-06-15T00:00:00Z",
+      "is_featured": false
+    }
+  ],
+  "meta": {
+    "total": 30,
+    "count": 3,
+    "page": 1,
+    "per_page": 3,
+    "total_pages": 10
+  },
+  "filters": {
+    "technology": ["javascript", "nodejs", "react"],
+    "modality": ["remote", "onsite", "hybrid"],
+    "location": ["cdmx_mx", "bsas_ar", "asu_py"],
+    "experience_level": ["junior", "mid", "senior"],
+    "time": ["part_time", "full_time"]
+  },
+  "timestamp": "2025-10-31T14:24:00Z",
+  "schema_version": "1.0.0"
+}
