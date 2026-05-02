@@ -1,0 +1,9 @@
+packages:
+  # Todos los paquetes dentro de la carpeta ejercicios
+  - 'ejercicios/**'
+allowBuilds:
+  '@google/genai': true
+  '@swc/core': true
+  bufferutil: true
+  esbuild: true
+  protobufjs: true
