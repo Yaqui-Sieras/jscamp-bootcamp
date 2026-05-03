@@ -4,7 +4,7 @@ import tseslint from 'typescript-eslint'
 
 export default tseslint.config({
   files: ['**/*.{js,ts,jsx,tsx}'],
-  ignores: ['dist', 'node_modules', 'coverage', 'build'],
+  ignores: ['dist', 'node_modules', 'coverage', 'build', 'old-index.js', '**/old-index.js'],
   extends: [js.configs.recommended],
   languageOptions: {
     ecmaVersion: 2022,
