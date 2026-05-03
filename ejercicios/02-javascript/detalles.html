@@ -1,78 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Detalles del empleo seleccionado." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevJobs - Detalles del Empleo</title>
+    <link rel="icon" type="image/png" href="./img/icons8-source-code-64.png" />
+    <link
+      rel="stylesheet"
+      href="https://yaqui-sieras.github.io/miResetCSS/miReset.css"
+    />
+    <link rel="stylesheet" href="./css/gral_styles.css" />
+    <link rel="stylesheet" href="./css/detalles.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Detalles del empleo seleccionado.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevJobs - Detalles del Empleo</title>
-  <link rel="icon" type="image/png" href="./img/icons8-source-code-64.png" />
-  <link rel="stylesheet" href="https://yaqui-sieras.github.io/miResetCSS/miReset.css" />
-  <link rel="stylesheet" href="./css/gral_styles.css" />
-  <link rel="stylesheet" href="./css/detalles.css">
+    <script type="module" src="./js/empleos.js"></script>
+  </head>
 
-  <script type="module" src="./js/empleos.js"></script>
-</head>
+  <body>
+    <div id="root" class="root">
+      <header class="header_page">
+        <h1 class="header_page__title">
+          <svg
+            class="logo"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          DevJobs
+        </h1>
 
-<body>
-  <div id="root" class="root">
-    <header class="header_page">
-      <h1 class="header_page__title">
-        <svg class="logo" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <polyline points="16 18 22 12 16 6"></polyline>
-          <polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
-        DevJobs
-      </h1>
+        <nav class="header_nav">
+          <a class="header_nav__link" href="index.html"> Inicio </a>
+          <a
+            class="header_nav__link header_nav__link--active"
+            href="empleos.html"
+          >
+            Empleos
+          </a>
+        </nav>
 
-      <nav class="header_nav">
-        <a class="header_nav__link" href="index.html">
-          Inicio
-        </a>
-        <a class="header_nav__link header_nav__link--active" href="empleos.html">
-          Empleos
-        </a>
-      </nav>
-
-      <div class="header_page__action_page">
-        <a href="">Publicar un empleo</a>
-        <a href="">Iniciar sesión</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="job-details">
-        <header class="job-details__header">
-          <h1 class="job-details__title">Desarrollador Frontend</h1>
-          <p class="job-details__company">Tech Solutions Inc.</p>
-          <p class="job-details__location">Madrid, España</p>
-        </header>
-        <div class="job-details__description">
-          <h2>Descripción del Puesto</h2>
-          <p>Estamos buscando un desarrollador frontend con experiencia en React y JavaScript para unirse a nuestro
-            equipo dinámico.</p>
-          <h3>Responsabilidades</h3>
-          <ul>
-            <li>Desarrollar y mantener aplicaciones web.</li>
-            <li>Colaborar con diseñadores y otros desarrolladores.</li>
-            <li>Optimizar aplicaciones para máxima velocidad y escalabilidad.</li>
-          </ul>
-          <h3>Requisitos</h3>
-          <ul>
-            <li>Experiencia comprobada en desarrollo frontend.</li>
-            <li>Conocimiento profundo de React.js.</li>
-            <li>Habilidades en HTML, CSS y JavaScript.</li>
-          </ul>
+        <div class="header_page__action_page">
+          <a href="">Publicar un empleo</a>
+          <a href="">Iniciar sesión</a>
         </div>
-        <button type="button" class="button-apply-job">Aplicar ahora</button>
-      </section>
-    </main>
+      </header>
 
-    <footer class="footer_page">
-      <small class="copy_page">&copy; 2025 DevJobs. Todos los derechos reservados.</small>
-    </footer>
-  </div>
-</body>
+      <main>
+        <section class="job-details">
+          <header class="job-details__header">
+            <h1 class="job-details__title">Desarrollador Frontend</h1>
+            <p class="job-details__company">Tech Solutions Inc.</p>
+            <p class="job-details__location">Madrid, España</p>
+          </header>
+          <div class="job-details__description">
+            <h2>Descripción del Puesto</h2>
+            <p>
+              Estamos buscando un desarrollador frontend con experiencia en
+              React y JavaScript para unirse a nuestro equipo dinámico.
+            </p>
+            <h3>Responsabilidades</h3>
+            <ul>
+              <li>Desarrollar y mantener aplicaciones web.</li>
+              <li>Colaborar con diseñadores y otros desarrolladores.</li>
+              <li>
+                Optimizar aplicaciones para máxima velocidad y escalabilidad.
+              </li>
+            </ul>
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Experiencia comprobada en desarrollo frontend.</li>
+              <li>Conocimiento profundo de React.js.</li>
+              <li>Habilidades en HTML, CSS y JavaScript.</li>
+            </ul>
+          </div>
+          <button type="button" class="button-apply-job">Aplicar ahora</button>
+        </section>
+      </main>
 
+      <footer class="footer_page">
+        <small class="copy_page"
+          >&copy; 2025 DevJobs. Todos los derechos reservados.</small
+        >
+      </footer>
+    </div>
+  </body>
 </html>
