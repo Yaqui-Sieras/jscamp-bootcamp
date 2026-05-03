@@ -36,6 +36,7 @@ pnpm lint   # eslint .
 ```
 
 Root-level commands:
+
 ```bash
 pnpm lint         # lint all packages
 pnpm format       # prettier --write .
@@ -48,17 +49,18 @@ pnpm reset        # clean node_modules + locks + reinstall
 
 ## Key Packages
 
-| Package | Type | Notes |
-|---------|------|-------|
-| 05-express | ESM | Express API, Zod, CORS, port 1234 |
-| 05-node | ESM | Node.js ESM modules |
-| 06-testing/e2e | ESM | Playwright |
-| 08-ia/backend | ESM | AI Express API |
-| 08-ia/frontend | ESM | React + Vite |
+| Package        | Type | Notes                             |
+| -------------- | ---- | --------------------------------- |
+| 05-express     | ESM  | Express API, Zod, CORS, port 1234 |
+| 05-node        | ESM  | Node.js ESM modules               |
+| 06-testing/e2e | ESM  | Playwright                        |
+| 08-ia/backend  | ESM  | AI Express API                    |
+| 08-ia/frontend | ESM  | React + Vite                      |
 
 ## Package.json Standard
 
 All packages follow this structure:
+
 ```json
 {
   "name": "<folder-name>",

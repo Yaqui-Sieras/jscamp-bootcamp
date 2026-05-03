@@ -12,9 +12,13 @@ export default tseslint.config({
       ...globals.browser,
       ...globals.node,
     },
+    parserOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
   },
-  rules: {
+rules: {
     'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-    'no-console': 'warn',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
 })
