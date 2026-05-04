@@ -1,0 +1,12 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS technologies;
+
+-- Crear tabla --
+CREATE TABLE technologies (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE
+);
+
+-- Insercion de datos --
+INSERT INTO technologies (name) VALUES
+('JavaScript'), ('Python'), ('C#'), ('C++'), ('Java'), ('React'), ('Node.js');
