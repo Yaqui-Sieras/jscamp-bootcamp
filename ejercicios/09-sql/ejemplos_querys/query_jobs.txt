@@ -1,0 +1,49 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS jobs;
+
+-- Crear tabla --
+CREATE TABLE jobs (
+  ID INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  company_ID INTEGER,
+  location TEXT NOT NULL,
+  description TEXT NOT NULL,
+  modality_ID INTEGER,
+  level_ID INTEGER,
+  salary_min real,
+  salary_max real,
+  is_active INTEGER DEFAULT TRUE,
+  posted_at TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (company_ID) REFERENCES companies(ID) ON DELETE CASCADE,
+  FOREIGN KEY (modality_ID) REFERENCES modalities(ID) ON DELETE SET NULL,
+  FOREIGN KEY (level_ID)    REFERENCES levels(ID)     ON DELETE SET NULL
+);
+
+-- Insercion de datos --
+INSERT INTO jobs( title, company_ID, location, description, modality_ID, level_ID)
+VALUES
+  ('Frontend Developer', 1, 'Argentina', 'Descripcion de ejemplo', 1, 2),
+  ('Backend Developer', 2, 'Paraguay', 'Descripcion de ejemplo', 2, 4),
+  ('Full-Stack Developer', 3, 'Mexico', 'Descripcion de ejemplo', 3, 3);
+
+-- Traer datos --
+SELECT
+    j.ID,
+    j.title AS 'Puesto',
+    c.name AS 'Empresa',
+    m.name AS 'Modalidad',
+    l.name AS 'Nivel',
+    GROUP_CONCAT(t.name, ', ') AS 'Tecnologías',
+    j.location AS 'Ubicación',
+    j.salary_min AS 'Sueldo Mín',
+    j.salary_max AS 'Sueldo Máx',
+    j.posted_at AS 'Publicado'
+FROM jobs j
+JOIN companies              c ON j.company_ID = c.ID
+JOIN modalities             m ON j.modality_ID = m.ID
+JOIN levels                 l ON j.level_ID = l.ID
+LEFT JOIN job_technologies jt ON j.ID = jt.job_id
+LEFT JOIN technologies      t ON jt.technology_id = t.ID
+WHERE j.is_active = 1
+GROUP BY j.ID -- Obligatorio para que GROUP_CONCAT funcione por cada trabajo
+ORDER BY j.posted_at DESC;

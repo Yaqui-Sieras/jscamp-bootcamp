@@ -1,0 +1,11 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS levels;
+
+-- Crear tabla --
+CREATE TABLE levels (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE
+);
+
+-- Insercion de datos --
+INSERT INTO levels (name) VALUES ('trainee'), ('junior'), ('semi-senior'), ('senior'), ('lead');

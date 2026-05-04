@@ -1,0 +1,21 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS job_technologies;
+
+-- Crear tabla --
+CREATE TABLE job_technologies (
+    job_ID INTEGER NOT NULL,
+    technology_ID INTEGER NOT NULL,
+    PRIMARY KEY (job_ID, technology_ID),
+    FOREIGN KEY (job_ID) REFERENCES jobs(ID) ON DELETE CASCADE,
+    FOREIGN KEY (technology_ID) REFERENCES technologies(ID) ON DELETE CASCADE
+);
+
+-- Insercion de datos --
+-- El trabajo 1 (Frontend) requiere JavaScript (1) y React (6)
+INSERT INTO job_technologies (job_ID, technology_ID) VALUES (1, 1), (1, 6);
+
+-- El trabajo 2 (Backend) requiere Python (2)
+INSERT INTO job_technologies (job_ID, technology_ID) VALUES (2, 2);
+
+-- El trabajo 3 (Full-Stack) requiere JavaScript (1) y Java (5)
+INSERT INTO job_technologies (job_ID, technology_ID) VALUES (3, 1), (3, 5);

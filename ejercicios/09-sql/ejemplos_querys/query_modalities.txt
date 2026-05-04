@@ -1,0 +1,11 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS modalities;
+
+-- Crear tabla --
+CREATE TABLE modalities (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE
+);
+
+-- Insercion de datos --
+INSERT INTO modalities (name) VALUES ('remote'), ('on_site'), ('hybrid');

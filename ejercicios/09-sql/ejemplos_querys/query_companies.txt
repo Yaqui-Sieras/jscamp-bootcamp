@@ -1,0 +1,22 @@
+-- Eliminar tabla si existe --
+DROP TABLE IF EXISTS companies;
+
+-- Crear tabla --
+CREATE TABLE companies (
+  ID INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  address TEXT NOT NULL,
+  city TEXT NOT NULL,
+  email TEXT NOT NULL UNIQUE,
+  is_active INTEGER DEFAULT TRUE
+);
+
+-- Insercion de datos --
+INSERT INTO companies( name, address, city, email)
+VALUES
+  ('Vercel', 'Venezuela 2984', 'Buenos Aires', 'hr@vercel.com'),
+  ('Google', 'Carlos Calvo 875', 'Asuncion', 'jobs@google.com'),
+  ('Microsoft', 'Rawson 42', 'Mar de Ajo', 'latam@microsoft.com'),
+  ('Mercado Libre', 'Av. Rivadavia 4192', 'Piribebuy', 'talent@mercadolibre.com'),
+  ('Globant', 'Av. Jujuy 600', 'Córdoba', 'hiring@globant.com'),
+  ('GitHub', 'Av. Belgrano 2986', 'Aguas Verdes', 'careers@github.com');
